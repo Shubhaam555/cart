@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .class {
+        width: 100%;
+        height: 400px;
+        background-color: white;
+        display: flex;
+    }
+
+    .c1,
+    .c2,
+    .c3,
+    .c4,
+    .c5,
+    .c6 {
+        height: 350px;
+        background-color: whitesmoke;
+        margin: 15px;
+        
+        width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+    
+</style>
+
+<body>
+    <div class="class">
+        <div class="c1"><img src="fortune_img1.webp" width="200" height="200">
+            <center>
+                <h5>FORTUNE health physically Refined Rice Bran Oil Pouch (1 L) <br> ₹142 &nbsp; <strike>₹199 </strike>
+                    &nbsp; 28% off 
+                </h5>
+            </center>
+            <h5 id="h1"></h5>
+            <button onclick="increase()">ADD ITEM</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="dcrease()">-</button>
+        </div>
+        <div class="c2"><img src="f6.webp" width="200" height="200">
+            <center>
+                <h5>FORTUNE Premium kachi ghani pure Mustard Oil PET Bottle (Aava Nune) (1 L) <br> ₹169 &nbsp;
+                    <strike>₹225 </strike>
+                    &nbsp; 24% off
+                </h5>
+            </center>
+            <h5 id="h2"></h5>
+            <button onclick="increase()">ADD ITEM</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="dcrease()">-</button>
+        </div>
+        <div class="c3"><img src="f5.webp" width="200" height="200">
+            <center>
+                <h5>FORTUNE Sunlite Refined Sunflower Oil Plastic Bottle (2 L)<br> ₹276 &nbsp; <strike>₹460 </strike>
+                    &nbsp; 40% off
+                </h5>
+            </center>
+            <h5 id="h3"></h5>
+            <button onclick="increase()">ADD ITEM</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="dcrease()">-</button>
+        </div>
+        <div class="c4"><img src="f4.webp" width="200" height="200">
+            <center>
+                <h5>Fiona Refined Sunflower Oil Pouch (1 L) <br> ₹134 &nbsp; <strike>₹170 </strike>
+                    &nbsp; 21% off
+                </h5>
+            </center>
+            <h5 id="h4"></h5>
+            <button onclick="increase()">ADD ITEM</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="dcrease()">-</button>
+        </div>
+        <div class="c5"><img src="f3.webp" width="200" height="200">
+            <center>
+                <h5>Freedom Refined Sunflower Oil Pouch (1 L) <br> ₹143 &nbsp; <strike>₹179 </strike>
+                    &nbsp; 20% off
+                </h5>
+            </center>
+            <h5 id="h5"></h5>
+            <button onclick="increase()">ADD ITEM</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="dcrease()">-</button>
+        </div>
+        <div class="c6"><img src="f.webp" width="200" height="200">
+            <center>
+                <h5>FORTUNE health physically Refined Rice Bran Oil Pouch (1 L) <br> ₹142 &nbsp; <strike>₹199 </strike>
+                    &nbsp; 28% off
+                </h5>
+            </center>
+            <h5 id="h6"></h5>
+            <button onclick="increase()">ADD ITEM</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="dcrease()">-</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+        let count = 0;
+        function increase() {
+
+            var h1 = document.getElementById('h1');
+            count += 1;
+            document.getElementById('h1').innerHTML = count;
+
+        }
+
+
+
+        function reset() {
+
+            var h1 = document.getElementById('h1');
+            count = 0;
+            document.getElementById('h1').innerHTML = count;
+
+        }
+
+        function dcrease() {
+
+            var h1 = document.getElementById('h1');
+            count -= 1;
+            document.getElementById('h1').innerHTML = count;
+
+        }
+
+
+    </script>
+</body>
+
+</html>
